@@ -11,12 +11,12 @@ import lombok.Data;
 )
 public class CardDto {
 
-    @Pattern(regexp = "(^$|[0-9]{10})", message = "Mobile number must be 10 digits.")
+    @Pattern(regexp = "(^$|\\d{10})", message = "Mobile number must be 10 digits.")
     @Schema(description = "10-digit mobile number registered with EazyBank card", example = "0123456789")
     private String mobileNumber;
 
     @NotEmpty
-    @Pattern(regexp = "(^$|[0-9]{12})", message = "Card number must be 12 digits.")
+    @Pattern(regexp = "(^$|\\d{12})", message = "Card number must be 12 digits.")
     @Schema(description = "12-digit EazyBank card number", example = "012345678901")
     private String cardNumber;
 
