@@ -65,7 +65,7 @@ public class CardServiceImpl implements ICardService {
         card.setMobileNumber(mobileNumber);
         long randomCardNumber = 100000000000L + new Random().nextInt(900000000);
         card.setCardNumber(Long.toString(randomCardNumber));
-        card.setCardType(CardConstants.CARD_TYPE);
+        card.setCardType(CardConstants.CREDIT_CARD);
         card.setTotalLimit(CardConstants.NEW_CARD_LIMIT);
         card.setAmountUsed(0);
         card.setAvailableAmount(CardConstants.NEW_CARD_LIMIT);

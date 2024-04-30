@@ -1,13 +1,11 @@
 package cz.rodr.cards.constants;
 
-import cz.rodr.cards.repository.CardRepository;
-
 public class CardConstants {
     private CardConstants() {
         // restrict instantiation
     }
 
-    public static final String CARD_TYPE = "Credit Card";
+    public static final String CREDIT_CARD = "Credit Card";
     public static final int  NEW_CARD_LIMIT = 1_00_000;
     public static final String MESSAGE_201 = "Card was created successfully.";
     public static final String STATUS_201 = "201";
