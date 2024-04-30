@@ -101,7 +101,7 @@ public class CardController {
         } else {
             return ResponseEntity
                     .status(HttpStatus.EXPECTATION_FAILED)
-                    .body(new ResponseDto(CardConstants.STATUS_417, CardConstants.MESSAGE_417));
+                    .body(new ResponseDto(CardConstants.STATUS_417, CardConstants.MESSAGE_417_UPDATE));
         }
     }
     @Operation(
@@ -138,7 +138,7 @@ public class CardController {
         } else {
             return ResponseEntity
                     .status(HttpStatus.EXPECTATION_FAILED)
-                    .body(new ResponseDto(CardConstants.STATUS_417, CardConstants.MESSAGE_417));
+                    .body(new ResponseDto(CardConstants.STATUS_417, CardConstants.MESSAGE_417_DELETE));
         }
     }
 }
